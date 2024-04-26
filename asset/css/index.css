@@ -1,6 +1,4 @@
 .header{
-    z-index: 10;
-    position: relative;
     height: 100vh;
     background: linear-gradient(rgba(10, 10, 10, 0), rgba(0, 0, 0, 0.666)), url(../img/pexels-pavel-danilyuk-8425447.jpg);
     background-attachment: fixed;
@@ -80,13 +78,13 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background: rgba(128, 128, 128, 0.071);
     padding: 30px;
     gap: 10px;
     margin-block: 50px 0 0 0;
     h2{
         font-size: 120px;
         text-transform: uppercase;
+        text-decoration: underline;
     }
 }
 
@@ -166,7 +164,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-block: 30px 50px;
 
     a{
         font-size: 20px;
@@ -319,9 +317,8 @@
 }
 
 .title-article{
-    margin-inline: 50px;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
 
@@ -425,7 +422,7 @@ footer{
 .link-footer{
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: row;
     width: 100%;
     gap: 20px;
@@ -449,6 +446,10 @@ footer{
   
 }
 
+.hidden{
+    display: none;
+}
+
 @media screen and (max-width: 775px) {
     .info-parent{
         flex-wrap: wrap;
@@ -465,9 +466,7 @@ footer{
 
     .menu-burger{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 24px;
+        flex-direction: column;
     }
 
     .how{
@@ -589,7 +588,7 @@ footer{
         justify-content: flex-end;
         align-items: flex-end;
         gap: 20px;
-        background: rgba(128, 128, 128, 0.27);
+        background: rgba(118, 118, 118, 0.415);
         width: 300px;
         padding: 30px;
         border-radius: 20px;

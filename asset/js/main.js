@@ -1,8 +1,8 @@
 const menuBurger = document.querySelector("#burger")
-console.log(menuBurger)
+const menu = document.querySelector('#menu')
 
 menuBurger.addEventListener('click', function (){
-    menuBurger.classList.toggle('active')
-    console.log(menuBurger)
-})
+    menu.classList.toggle('active')
 
+    console.log(menu)
+})

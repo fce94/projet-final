@@ -18,7 +18,7 @@
         <div class="barre-nav-link">
           <a href="">Espace Chauffeurs</a>
           <a href="">Espace Hôtels</a>
-          <a href="inscription.html">Inscription</a>
+          <a href="connexion.html">Connexion</a>
           <a href="view/reservation.html">Reservation</a>
         </div>
         <div class="menu-burger">
@@ -26,15 +26,23 @@
         </div>
       </div>
       <div class="accroche">
-        <h2>Connectez-vous</h2>
-        <p>Accédez à votre emploi du temps</p>
+        <h2>simplifiez votre journée en vous inscrivant</h2>
+        <p>Votre emploi du temps orgarnisé en automatique</p>
       </div>
     </section>
     <div class="title-form">
-      <h1>Connexion</h1>
+      <h1>Inscription</h1>
     </div>
     <section class="form-custom">
       <form action="" class="form">
+        <div class="input-parent">
+          <div>
+            <label for="full-name">Nom / Prénom</label>
+          </div>
+          <div>
+            <input type="text" id="full-name" placeholder="nom / prenom" />
+          </div>
+        </div>
         <div class="input-parent">
           <div>
             <label for="mail">E-mail</label>
@@ -45,19 +53,33 @@
         </div>
         <div class="input-parent">
           <div>
+            <label for="number">Numéro de téléphone</label>
+          </div>
+          <div><input type="tel" placeholder="numéro de téléphone" /></div>
+        </div>
+        <div class="input-parent">
+          <div>
             <label for="passeword">Mot de passe</label>
           </div>
           <div><input type="password" placeholder="mot de passe" /></div>
         </div>
+        <div class="input-parent">
+          <div>
+            <label for="passeword-confirmed">Confirmez votre passe</label>
+          </div>
+          <div>
+            <input type="password" placeholder="confirmez votre mot de passe" />
+          </div>
+        </div>
         <div>
-          <button class="btn-form">Accéder à mon planning</button>
+          <button class="btn-form">Inscrivez-vous</button>
         </div>
         <div class="link-log-in">
           <div>
-            <p>Vous n'avez pas de compte ?</p>
+            <p>Vous avez déjà un compte ?</p>
           </div>
           <div>
-            <a href="inscription.html">Inscrivez-vous</a>
+            <a href="connexion.html">Connectez-vous</a>
           </div>
         </div>
       </form>

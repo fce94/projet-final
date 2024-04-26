@@ -13,9 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.header{
-    background: linear-gradient(100px 100px 100px rgb(0, 0, 0));
-}
+
 
 .barre-nav{
     display: flex;
@@ -37,7 +35,7 @@ html{
 }
 
 .menu-burger{
-   display: none
+   display: none;
 }
 
 a{
