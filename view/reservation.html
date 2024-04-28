@@ -1,43 +1,152 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reservation.css">
-</head>
-<body>
-    <section class="barre-nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>connexion</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/link-barre-nav.css" />
+  </head>
+  <body>
+    <section class="header-reservation">
+      <div class="barre-nav">
+        <div>
+          <a href="../index.html"
+            ><img src="../asset/img/logo.png" alt="logo" width="150px"
+          /></a>
+        </div>
         <div class="barre-nav-link">
-          <a href="index.html">Book &co.</a>
-          <div>
-            <a href="">Espace Chauffeurs</a>
-            <a href="">Espace Hôtels</a>
-            <a href="../view/connexion.html">Inscription</a>
-            <a href="../view/reservation.html">Reservation</a>
+          <a href="">Espace Chauffeurs</a>
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+          <button class="btn-nav-barre">
+            <a href="reservation.html">Reservation</a>
+          </button>
+        </div>
+        <div class="menu-burger">
+          <img src="../asset/img/BOOK &co (13).png" alt="" />
+        </div>
+      </div>
+      <div class="accroche">
+        <h2>Plannifiez une réservation</h2>
+        <p>Envoyez une réservation au chauffeur</p>
+      </div>
+    </section>
+    <div class="title-form">
+      <h1>Réservation</h1>
+    </div>
+    <section class="form-custom">
+      <form action="" class="form">
+        <div class="partie-hotel">
+          <div class="input-parent">
+            <div>
+              <label for="hotel-name">Nom de l'hôtel</label>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                id="hotel-name"
+                placeholder="Entrez le nom de l'hôtel"
+              />
+            </div>
+          </div>
+
+          <div class="input-parent">
+            <div>
+              <label for="fullName">Nom / Prénom</label>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Entrez votre nom / prénom"
+              />
+            </div>
           </div>
         </div>
-      </section>
-    <form action="">
-        <div>
-            <input type="text" placeholder="nom / prenom">
+
+        <div class="partie-client">
+          <h2>Client</h2>
+          <div class="input-parent">
+            <div>
+              <label for="full-name">Nom / Prénom</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Entrez le nom / prénom du client"
+              />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="mail">E-mail</label>
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Entrez l'adresse mail du client"
+              />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="number">Numéro de téléphone</label>
+            </div>
+            <div>
+              <input type="tel" placeholder="numéro de téléphone du client" />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="text">Nombre de personne</label>
+            </div>
+            <div><input type="text" placeholder="Nb de personne" /></div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="nombre de valise">Nombre de valises</label>
+            </div>
+            <div>
+              <input type="text" placeholder="Nb de valises" />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="aeroport">Aéroport</label>
+            </div>
+            <div>
+              <input type="text" placeholder="Aeroport" />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="terminal">Terminal de l'aeroport</label>
+            </div>
+            <div>
+              <input type="text" placeholder="Terminal de l'aeroport" />
+            </div>
+          </div>
+          <div class="input-parent">
+            <div>
+              <label for="information">Information</label>
+            </div>
+            <div class="textarea">
+              <textarea
+                name="information"
+                id="information"
+                cols="90"
+                rows="10"
+                placeholder="Exemple : Le client aura deux grosses valises et une petite"
+              ></textarea>
+            </div>
+          </div>
         </div>
-        <div>
-            <input type="tel" placeholder="numéro de téléphone">
-        </div>
-        <div>
-            <input type="text" placeholder="nb de personne">
-        </div>
-        <div>
-            <input type="text" placeholder="aeroport">
-        </div>
-        <div>
-            <input type="text" placeholder="termimal">
-        </div>
-        <div>
-            
-        </div>
-    </form>  
-</body>
+        <button class="btn-form">Envoyer la réservation</button>
+      </form>
+    </section>
+  </body>
 </html>

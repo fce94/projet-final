@@ -1,75 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Helvetica, sans-serif;
-    background: #fff;
+body {
+  font-family: Helvetica, sans-serif;
+  background: #fff;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-
-
-.barre-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    height: 100px;
-    background: rgb(0, 0, 0);
-    padding: 20px;  
-
+.barre-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  padding: 20px;
 }
 
-.barre-nav-link{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    
+.barre-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
-.menu-burger{
-   display: none;
+.menu-burger {
+  display: none;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 14px;
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-a:hover{
-    color: rgb(255, 89, 0);
-    transition: 0.5s;
+a:hover {
+  color: rgb(255, 89, 0);
+  transition: 0.5s;
 }
 
+.btn {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  background: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
 
-
-
-.btn{
-    width: 150px;
-    height: 50px;
-    background: black;
-    border: 2px solid black;
-    border-radius: 10px;
+  a{
     font-size: 20px;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    
+  }
+  a:hover{
+    color: #fff;
+  }
+  
 }
 
-.btn:hover{
-    border: 2px solid rgb(255, 89, 0);
-    background: rgb(255, 89, 0);
-    transition: 0.5s;
+.btn:hover {
+  border: 2px solid rgb(255, 89, 0);
+  background: rgb(255, 89, 0);
+  transition: 0.5s;
 }
-
-

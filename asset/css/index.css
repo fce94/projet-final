@@ -1,6 +1,6 @@
 .header{
     height: 100vh;
-    background: linear-gradient(rgba(10, 10, 10, 0), rgba(0, 0, 0, 0.666)), url(../img/pexels-pavel-danilyuk-8425447.jpg);
+    background: linear-gradient(rgba(10, 10, 10, 0), rgba(0, 0, 0, 0.666)), url(../img/index-header.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
@@ -47,6 +47,10 @@
 .main{
     background: #fff;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
 
 .title-main{
@@ -117,7 +121,7 @@
     text-align: center;
     gap: 15px;
     width: 600px;
-    background: url(../img/receptionists-5975962_640.jpg) rgb(255, 89, 0);
+    background: url(../img/hotel.jpg) rgb(255, 89, 0);
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -137,7 +141,7 @@
     text-align: center;
     gap: 15px;
     width: 600px;
-    background: url(../img/pexels-ron-lach-9519970.jpg) rgb(255, 89, 0);
+    background: url(../img/driver.jpg) rgb(255, 89, 0);
     background-size: cover;
     background-position: 5% 10%;
     height: 400px;
@@ -289,8 +293,106 @@
     text-transform: uppercase;
     height: 20vh;
     width: 300px;
+    
+    ul{
+        list-style-type:circle;
+        li{
+            margin-block: 10px;
+        }
+        
+
+    }
 
 }
+
+.table-offre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: black;
+    margin-block: 40px;
+}
+
+.table-offre-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.495);
+}
+
+.btn-offre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    button{
+        height: 50px;
+        width: 250px;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        a{
+            color: white;
+            font-weight: 600;
+            font-family:Helvetica, sans-serif;
+        }
+    }
+
+    button:hover{
+        background: rgb(255, 89, 0);
+    }
+}
+
+
+
+.title-offre{
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    align-items: center;
+    width: 300px;
+    text-transform: uppercase;
+    h2{
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+
+.free{
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.622);
+}
+
+.premium{
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.622);
+
+}
+
+.list-offre{
+    text-transform: uppercase;
+    height: 20vh;
+    width: 300px;
+    
+    ul{
+        list-style-type:circle;
+        li{
+            margin-block: 10px;
+        }
+        
+
+    }
+
+}
+
+
 
 .all-block-article{
     display: flex;
@@ -330,19 +432,18 @@
 .p-article{
     display: flex;
     justify-content: flex-start;
-    color: black;
-    text-decoration: underline;
+    color: rgb(255, 89, 0);
     text-transform:none;
     font-size: 16px;
 }
 
 .p-article:hover{
-    color: rgb(255, 89, 0);
+    text-decoration: underline;
 }
 
 .block-article{
     gap: 15px;
-    background: url(../img/BOOK\ &co\ \(11\).png) no-repeat;
+    background: url(../img/etape-one.png) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -353,7 +454,7 @@
 }
 
 .block-article-2{
-    background: url(../img/pexels-453707837-15535503.jpg);
+    background: url(../img/etape-two.jpg);
     background-position: center;
     background-size: cover;
     gap: 15px;
@@ -364,7 +465,7 @@
 }
 
 .block-custom{
-    background: url(../img/pexels-pavel-danilyuk-8425054.jpg) no-repeat;
+    background: url(../img/etape-three.jpg) no-repeat;
     background-position: top center;
     background-size: cover;
     gap: 15px;
@@ -402,7 +503,7 @@
     justify-content: center;
     width: 70vw;
     height: 530px;
-    background: rgb(255, 89, 0) url(../img/BOOK\ &co\ \(2\).png) no-repeat;
+    background: rgb(255, 89, 0) url(../img/phone-download.png) no-repeat;
     background-position: center right;
     border-radius: 20px;
     padding: 40px;
@@ -593,4 +694,13 @@ footer{
         padding: 30px;
         border-radius: 20px;
       }
+
+    .title-a-propos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
 }

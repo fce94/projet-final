@@ -1,0 +1,269 @@
+
+.header{
+  z-index: 10;
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(rgba(10, 10, 10, 0), rgba(0, 0, 0, 0.666)), url(../img/log-in-header.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.header-inscription{
+  z-index: 10;
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(rgba(10, 10, 10, 0.447), rgba(0, 0, 0, 0.566)), url(../img/sign-in-header.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header-reservation{
+  z-index: 10;
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(rgba(10, 10, 10, 0.542), rgba(0, 0, 0, 0.666)), url(../img/reservation-header.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+}
+
+.barre-nav-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  height: 80px;
+  background: black;
+  padding: 20px;
+}
+
+.btn-nav-barre{
+  height: 40px;
+  background-color: rgb(255, 89, 0);
+  border: none;
+  a{
+      height: 40px;
+      width: 130px;
+      padding: 10px;
+      color: white;
+      font-weight: 600;
+      font-family:Helvetica, sans-serif;
+  }
+}
+
+.btn-nav-barre:hover{
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
+
+.accroche{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+  height: 70vh;
+  width: 50vw;
+  padding: 60px 0 0 60px;
+  color: white;
+  font-size: 18px;
+  h2{
+      text-transform: uppercase;
+      font-size: 50px;
+      color: whitesmoke;
+      
+  }
+}
+
+.title-form{
+  margin: 60px 0 50px 40px;
+  text-transform: uppercase;
+}
+
+.form-custom{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-block-end: 20px;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.input-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  
+}
+
+input{
+  height: 50px;
+  width: 90vw;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.071);
+  
+}
+
+.btn-form{
+  
+  width: 90vw;
+  height: 50px;
+  background: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 20px 0 5px;
+  
+}
+
+.btn-form:hover{
+  border: 2px solid rgb(255, 89, 0);
+  background: rgb(255, 89, 0);
+  transition: 0.5s;
+}
+
+.link-log-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  a{
+    color: black;
+    text-decoration: underline;
+  }
+  
+  a:hover{
+    color: rgb(255, 89, 0);
+    transition: 0.5s;
+  }
+}
+
+/* RESERVATION */
+.partie-hotel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid rgb(255, 89, 0);
+  border-radius: 10px;
+  padding: 40px;
+  margin-block-end: 20px;
+  input{
+    width: 40vw;
+  }
+
+  
+}
+
+.partie-client{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-inline: 20px;
+  h2{
+    text-transform: uppercase;
+  }
+}
+
+.textarea{
+  
+  textarea{
+    padding: 20px;
+    border: none;
+    width: 90vw;
+    border-radius: 20px;
+    background: rgba(128, 128, 128, 0.071);
+  }
+}
+
+@media  screen and (max-width: 775px) {
+  .header{
+    background: none;
+    height: 50vh;
+    img{
+        width: 90px;
+    }
+  }
+
+  .header-reservation{
+    background: none;
+    height: 50vh;
+    img{
+        width: 90px;
+    }
+  }
+
+  .header-inscription{
+    background: none;
+    height: 50vh;
+    img{
+        width: 90px;
+    }
+  }
+
+  .barre-nav-link{
+    display: none;
+}
+
+.menu-burger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+}
+
+
+.accroche {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  text-align: center;
+  padding: 50px;
+  background: black;
+  color: white;
+  h2{
+      font-size: 40px;
+      
+  }
+}
+
+
+  input{
+    width: 400px;
+  }
+ 
+   .textarea{
+    textarea{
+      width: 400px;
+    }
+   }
+  
+}
+
